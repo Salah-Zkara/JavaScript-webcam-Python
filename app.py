@@ -20,7 +20,7 @@ socketio = SocketIO(app)
 font = cv2.FONT_HERSHEY_SIMPLEX
 
 
-@socketio.on('input image', namespace='/test')
+@socketio.on('input image', namespace='/flask')
 def test_message(input):
     input = input.split(",")[1]
 
